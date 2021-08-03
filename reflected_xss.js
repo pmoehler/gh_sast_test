@@ -1,5 +1,5 @@
-function (req, res) {
-    const tainted = req.query.name;
-  
-    res.send(tainted); // Noncompliant
-  };
+function foo(req, res) {
+  const tainted = req.query.name;
+
+  res.send(tainted); // Noncompliant
+}
